@@ -3,11 +3,11 @@ n = int(input())
 output = 1
 
 for i in range(2, n):
-    L = list(range(1, i+1))
-    while sum(L) < n:
-        L.pop(0)
-        L.append(L[-1]+1)
-    if sum(L) == n:
-        output += 1
-
+    S = int(i * (i-1) / 2)
+    if (n-S)%i == 0:
+        output+=1
+    if S+i>n-1:
+        break
 print(output)
+
+    

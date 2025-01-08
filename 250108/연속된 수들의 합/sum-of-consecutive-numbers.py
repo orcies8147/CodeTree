@@ -8,6 +8,5 @@ for i in range(2, n):
         output+=1
     if S+i>n-1:
         break
-print(output)
 
-    
+print(output)    
